@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Esgobweb by frootmig</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Esgobweb</h1>
+        <h2>Web client for the DNS API of Esgob Ltd.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/frootmig/esgobweb/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/frootmig/esgobweb/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/frootmig/esgobweb" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="esgobweb" class="anchor" href="#esgobweb" aria-hidden="true"><span class="octicon octicon-link"></span></a>esgobweb</h1>
+
+<p>Web client for the DNS API of <a href="https://www.esgob.com/">Esgob Ltd.</a>. The company provides a <a href="https://noc.esgob.com/secondary_dns">Free Secondary DNS</a> service. esgobweg can be used as a web interface for their API. You need an account with Esgob in order to use esgobweb.</p>
+
+<h2>
+<a id="system-requirements" class="anchor" href="#system-requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>System requirements</h2>
+
+<p>esgobweb requires a webserver with capability of running PHP 5.4 and curl. For Debian based Linux distributions make sure the php5-curl package is installed.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Please follow these steps to get a working installation of esgobweb.</p>
+
+<h3>
+<a id="extract-archive" class="anchor" href="#extract-archive" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extract archive</h3>
+
+<p>Extract the esgobweb archive into a folder of your web server where you want to access it.</p>
+
+<h3>
+<a id="security-considerations" class="anchor" href="#security-considerations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Security considerations</h3>
+
+<p>I recommend allowing access to esgobweb only via SSL, but this is not mandatory. There is currently no authentication mechanism in esgobweb, so please make sure you use your webservers password authentication or IP restrictions to prevent unauthorized access to your zones.</p>
+
+<h3>
+<a id="install-bootstrap" class="anchor" href="#install-bootstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Bootstrap</h3>
+
+<p>esgobweb requires Bootstrap. Download <a href="http://getbootstrap.com/getting-started/#download">the latest version of Bootstrap 3</a> into the folder you extracted esgobweb. Then extract it and create a symlink to make it usable for esgobweb:</p>
+
+<p><code>unzip bootstrap-3.XXX-dist.zip</code>
+<code>ln -s bootstrap-3.XXX-dist dist</code></p>
+
+<h3>
+<a id="configure-api-key-and-user-name" class="anchor" href="#configure-api-key-and-user-name" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configure API key and user name</h3>
+
+<p>Copy config.dist.php to config.inc.php and set all configuration variables, especially the Esgob API user and key.</p>
+
+<h3>
+<a id="install-flag-package-optional" class="anchor" href="#install-flag-package-optional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install flag package (optional)</h3>
+
+<p>esgobweb can display flags for the country of the anycast nodes. You need to install a flag package and set the option FLAG_FOLDER in config.inc.php to the relative path of the flags that should be used.</p>
+
+<p>You can download e.g. <a href="http://365icon.com/icon-styles/ethnic/classic2/">243 Country Flag Icons</a> and extract the content into the esgob folder. Set the config.inc.php apropriate:</p>
+
+<p><code>define('FLAG_FOLDER', 'flags/flags_iso/24/');</code></p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
