@@ -136,8 +136,8 @@ if ($domain == '') {
 		echo('<tr>');
 		echo('<td>');
 		$country = strtoupper($a->country);
-		$flag_file = 'flags_iso/24/'.$a->country.'.png';
-		if (file_exists($flag_file)) {
+		$flag_file = FLAG_FOLDER.$a->country.'.png';
+		if (FLAG_FOLDER != '' && file_exists($flag_file)) {
 			echo('<img src="'.$flag_file.'" alt="'.htmlentities($country).'" />');
 		} else {
 			echo htmlentities($country);

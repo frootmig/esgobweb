@@ -16,6 +16,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>
 */
 
+/* Esgob API account name. */
 define('ESGOB_ACCOUNT', '');
+/* Esgob API key. */
 define('ESGOB_KEY', '');
+/* Relative path to the flag folder. */
+define('FLAG_FOLDER', '');
 ?>
