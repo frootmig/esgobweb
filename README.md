@@ -1,6 +1,6 @@
 # esgobweb
 
-Web client for the DNS API of Esgob Ltd.
+Web client for the DNS API of [Esgob Ltd.](https://www.esgob.com/). The company provides a [Free Secondary DNS](https://noc.esgob.com/secondary_dns) service. esgobweg can be used as a web interface for their API. You need an account with Esgob in order to use esgobweb.
 
 ## System requirements
 
