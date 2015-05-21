@@ -22,8 +22,8 @@ I recommend allowing access to esgobweb only via SSL, but this is not mandatory.
 
 esgobweb requires Bootstrap. Download [the latest version of Bootstrap 3](http://getbootstrap.com/getting-started/#download) into the folder you extracted esgobweb. Then extract it and create a symlink to make it usable for esgobweb:
 
-`unzip bootstrap-3.XXX-dist.zip
-ln -s bootstrap-3.XXX-dist dist`
+`unzip bootstrap-3.XXX-dist.zip`
+`ln -s bootstrap-3.XXX-dist dist`
 
 ### Configure API key and user name
 
