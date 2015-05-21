@@ -4,7 +4,7 @@ Web client for the DNS API of [Esgob Ltd.](https://www.esgob.com/). The company 
 
 ## System requirements
 
-esgobweb requires a webserver with capability of running PHP 5.4 and curl. For Debian based Linux distributions make sure the php5-curl package is installed.
+esgobweb requires a webserver with capability of running PHP 5.4 (or later) and curl. For Debian based Linux distributions make sure the php5-curl package is installed.
 
 ## Installation
 
