@@ -1,5 +1,7 @@
 # esgobweb
 
+*Please note that the free secondary DNS service will be shutdown soon. This software will no longer work.*
+
 Web client for the DNS API of [Esgob Ltd.](https://www.esgob.com/). The company provides a [Free Secondary DNS](https://noc.esgob.com/secondary_dns) service. esgobweg can be used as a web interface for their API. You need an account with Esgob in order to use esgobweb.
 
 ## System requirements
